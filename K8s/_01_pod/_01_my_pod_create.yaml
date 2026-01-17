@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: devops-002-hello-erdinc
   labels:
-    app.kubernetes.io/name: devops-002-hello-erdinc
+    app.kubernetes.io/name: devops-002-hello-erdinc-icten
     my-type: backend
     my-module: hello-my-module
     my-project-name: devops-002
