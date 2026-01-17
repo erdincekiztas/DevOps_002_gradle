@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: devops-002-hello-erdinc
+  labels:
+    app.kubernetes.io/name: devops-002-hello-erdinc
+    my-type: backend
+    my-module: hello-my-module
+    my-project-name: devops-002
+spec:
+  containers:
+  - name: devops-002-hello-erdinc
+    image: erdincekzts/devops_gradle_hello:V001
+
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8080
